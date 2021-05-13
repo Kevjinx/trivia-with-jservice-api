@@ -1,0 +1,47 @@
+body{
+  margin: 15% 10%;
+  background-image: url('./image/hq-trivia-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#trivia-dude {
+  align-items: center;
+  margin-bottom: 10%;
+  width: 200px;
+  border-radius: 100%;
+}
+
+
+table.game-table {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #FFD56B;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.game-table td, table.game-table th {
+  border: 10px solid #94D0CC;
+  padding: 4px 10px;
+}
+table.game-table tbody td {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+}
+table.game-table thead {
+  background: #FF7B54;
+  background: -moz-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
+  background: -webkit-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
+  background: linear-gradient(to bottom, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
+  border-bottom: 1px solid #444444;
+}
+table.game-table thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+table.game-table tfoot td {
+  font-size: 21px;
+}
