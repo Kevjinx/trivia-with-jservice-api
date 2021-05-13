@@ -29,6 +29,9 @@ table.game-table tbody td {
   font-weight: bold;
   color: #000000;
 }
+table.game-table tbody td:hover {
+  cursor: pointer
+}
 table.game-table thead {
   background: #FF7B54;
   background: -moz-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
