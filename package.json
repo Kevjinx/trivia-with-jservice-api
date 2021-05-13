@@ -1,0 +1,23 @@
+{
+  "name": "trivia-with-jservice-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "category.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevjinx/trivia-with-jservice-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kevjinx/trivia-with-jservice-api/issues"
+  },
+  "homepage": "https://github.com/Kevjinx/trivia-with-jservice-api#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
