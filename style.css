@@ -1,17 +1,26 @@
 body{
-  margin: 15% 10%;
+  margin: 5% 10%;
   background-image: url('./image/hq-trivia-background.png');
   background-repeat: no-repeat;
   background-position: center;
 }
 
+#top-section {
+  display: flex;
+  flex-direction: row;
+}
 #trivia-dude {
   align-items: center;
-  margin-bottom: 10%;
   width: 200px;
   border-radius: 100%;
+  margin-right: 100px;
+  margin-bottom: 20px;
 }
 
+#question-container {
+  background-color: white;
+  margin: 20px;
+}
 
 table.game-table {
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -47,4 +56,8 @@ table.game-table thead th {
 }
 table.game-table tfoot td {
   font-size: 21px;
+}
+
+#user-response {
+  margin-top: 20px;
 }

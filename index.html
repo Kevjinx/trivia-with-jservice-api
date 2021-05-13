@@ -8,12 +8,15 @@
   <title>Trivia</title>
 </head>
 <body>
-  <div>
+
+  <div id='top-section'>
     <img id='trivia-dude' src="./image/trivia-dude.gif" alt="that one hq trivia dude">
+    <div id='question-container'>
+      <p id='question'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, quas!</p>
+    </div>
   </div>
 
   <table class="game-table">
-~
     <thead id='thead-category'>
       <tr>
         <th class='category' id='head1'>Category</th>
@@ -61,8 +64,13 @@
         <td class='block-cell' id='cell_5_5'>$500</td>
       </tr>
     </tbody>
-
   </table>
+
+  <div id='response-container'>
+    <textarea name="" id="user-response" cols="30" rows="10"></textarea>
+    <button id='check-response'>Check Response</button>
+  </div>
+
 
   <script type='module' src='./game.js'></script>
 </body>
