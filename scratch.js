@@ -117,3 +117,13 @@ let catObj = {
   97: 'american literature',
   98: 'all numbers',
 }
+
+
+let randomCat = () => {
+  let id = Math.floor(Math.random()*100)
+  let catName = catObj.id;
+  console.log([id, catName]);
+  return [id, catName]
+}
+
+randomCat();
