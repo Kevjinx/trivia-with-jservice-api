@@ -1,11 +1,6 @@
-class Category{
-  constructor() {
-
-  }
-}
-
-
-
+//hardcoding the length of catObj for now,
+//will make this more dynamic later
+let catObjLength = 90;
 let catObj = {
   1: 'politics',
   10: 'childrens literature',
@@ -105,4 +100,33 @@ let catObj = {
   96: 'addresses',
   97: 'american literature',
   98: 'all numbers',
+}
+
+
+export default class Category {
+  constructor(headId) {
+    this.headId = headId
+    this.id;
+    this.catName;
+    this.updateEachCategoryDOM(headId);
+  }
+  randomCat = () => {
+    let id = Math.floor(Math.random()*catObjLength)
+    let catName = catObj[id];
+    return [id, catName]
+  }
+  updateEachCategoryDOM = (headId) => {
+    const categoryEle = document.getElementById(`head${headId}`)
+    let [id, catName] = this.randomCat()
+    categoryEle.innerHTML = this.capitalizeCatgoryName(catName);
+    this.id = id;
+    // categoryEle.value = id
+  }
+  capitalizeCatgoryName = (category) => {
+    let splitCat = category.split(' ')
+    const upperCaseSplitCat = splitCat.map(word => {
+      return word.charAt(0).toUpperCase() + word.slice(1)
+    });
+    return upperCaseSplitCat.join(' ');
+  }
 }

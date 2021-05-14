@@ -22,5 +22,5 @@ const jsonHandler = async fetchJson => {
 export const fetchClueJson = async (valueInput, catIdInput) => {
   const json = await getClueValueCat(valueInput, catIdInput)
   const obj = await jsonHandler(json)
-  console.log(obj)
+  return obj
 }
