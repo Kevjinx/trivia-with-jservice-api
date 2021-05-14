@@ -11,7 +11,7 @@ body{
 }
 #trivia-dude {
   align-items: center;
-  width: 200px;
+  width: 30%;
   border-radius: 100%;
   margin-right: 100px;
   margin-bottom: 20px;
@@ -32,35 +32,39 @@ table.game-table {
   text-align: center;
   border-collapse: collapse;
 }
-table.game-table td, table.game-table th {
+
+.block-cell, .category {
   border: 10px solid #94D0CC;
   padding: 4px 10px;
 }
-table.game-table tbody td {
-  font-size: 19px;
-  font-weight: bold;
-  color: #000000;
-}
-table.game-table tbody td:hover {
-  cursor: pointer
-}
-table.game-table thead {
-  background: #FF7B54;
-  background: -moz-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
-  background: -webkit-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
-  background: linear-gradient(to bottom, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
-  border-bottom: 1px solid #444444;
-}
-table.game-table thead th {
-  font-size: 18px;
+
+.category {
+  font-size: 1.24em;
   font-weight: bold;
   color: #000000;
   text-align: center;
   word-wrap: normal;
   width: 20%
 }
-table.game-table tfoot td {
-  font-size: 21px;
+
+.block-cell {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.block-cell:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+table.game-table thead {
+  background: #FF7B54;
+  background: -moz-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
+  background: -webkit-linear-gradient(top, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
+  background: linear-gradient(to bottom, #ff9c7f 0%, #ff8865 66%, #FF7B54 100%);
+  border-bottom: 1px solid #444444;
 }
 
 #user-response {
