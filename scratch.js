@@ -17,6 +17,7 @@ const loopCat = i => {
 fetchCategories(1)
 
 
+
 let catObj = {
   1: 'politics',
   10: 'childrens literature',
@@ -118,12 +119,15 @@ let catObj = {
   98: 'all numbers',
 }
 
-
 let randomCat = () => {
   let id = Math.floor(Math.random()*100)
-  let catName = catObj.id;
+  let catName = catObj[id];
   console.log([id, catName]);
   return [id, catName]
 }
 
-randomCat();
+const updateCategoryDOM = (dom) => {
+  let [id, catName] = randomCat()
+  dom.innerHTML = catName;
+  dom.value = id
+}
