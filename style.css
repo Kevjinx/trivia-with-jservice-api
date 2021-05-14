@@ -65,4 +65,8 @@ table.game-table tfoot td {
 
 #user-response {
   margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 1.25em;
 }
