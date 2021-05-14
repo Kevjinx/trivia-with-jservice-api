@@ -7,22 +7,27 @@ const cellTBody = document.getElementById('tbody-cell');
 const questionText = document.getElementById('question-text')
 const answerTextArea = document.getElementById('user-response')
 const checkResponseBtn = document.getElementById('check-response')
+const hiddenAnswerEle = document.getElementById('hidden-answer')
 const game = new NewGame()
 
 const updateBoard = (json) => {
   questionText.innerHTML = json.question;
-  answerTextArea.innerHTML =  json.answer;
+  hiddenAnswerEle.value =  json.answer;
 }
 
+const correctResponse = () => {
+  console.log('correct response');
+}
+
+const wrongResponse = () => {
+  console.log('wrong response');
+}
 
 const checkResponse = () => {
-
+  answerTextArea.value == hiddenAnswerEle.value
+    ? correctResponse()
+    : wrongResponse();
 }
-
-
-
-
-
 
 
 cellTBody.addEventListener('click', async event => {
@@ -33,4 +38,8 @@ cellTBody.addEventListener('click', async event => {
   const valueInput = game.getValueFromRowId(rowId)
   const json = await fetchClueJson(valueInput, catIdInput)
   updateBoard(json)
+})
+
+checkResponseBtn.addEventListener('click', () => {
+  checkResponse();
 })
